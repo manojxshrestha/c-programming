@@ -44,7 +44,7 @@ Methods:
 
 # Topics to be covered :
 <hr>
-Chapter 1 - Variables, Data types + Input/Output
+
 
 Chapter 2 - Instructions & Operators
 
