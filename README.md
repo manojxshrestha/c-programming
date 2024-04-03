@@ -17,10 +17,6 @@ Computer Science: Project Work
 <hr>
 Welcome to the world of C programming, where endless possibilities await you! Throughout this guide, we’ll explore 50 fundamental programs that will help you become more skilled and knowledgeable in the C programming language.
 
-In this introduction, we’ll give you some background information on why learning C programming is important. We’ll also briefly review some key resources that can help you along the way.
-
-Our goal with this guide is to help you understand C programming better and improve your skills. However, it’s important to note that there may be some limitations to consider as you use this guide.
-
 So, let’s dive in and start exploring the world of C programming together!
 <hr>
 
