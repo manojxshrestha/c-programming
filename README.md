@@ -22,7 +22,7 @@ So, let’s dive in and start exploring the world of C programming together!
 <hr>
 To execute the programs outlined in this guide, the following materials and methods are recommended:
 
-# Materials:
+Materials:
 
 1. Computer with a C compiler installed (e.g., GCC, Clang)
 2. Text editor or integrated development environment (IDE) for writing and editing C code
