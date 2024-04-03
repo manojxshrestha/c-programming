@@ -66,4 +66,26 @@ return 0;
 }
 ```
 
-6. Practice Qs 1 (Area of Square)
+ 3. (Area of Square)
+```
+#include<stdio.h>
+//area of square
+int main() {
+int side;
+scanf("%d", &side);
+printf("%d", side * side);
+return 0;
+}
+```
+
+4. (Area of Circle)
+```
+#include<stdio.h>
+//area of square
+int main() {
+float radius;
+scanf("%f", &radius);
+printf("%f", 3.14 * radius * radius);
+return 0;
+}
+```
