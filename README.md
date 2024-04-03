@@ -408,5 +408,627 @@ int main() {
 
 
 
+Chapter 5 topics including functions and recursion:
+
+Program to find the factorial of a number using a function:
+c
+Copy code
+#include <stdio.h>
+
+int factorial(int n) {
+    if (n == 0 || n == 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+int main() {
+    int num;
+    printf("Enter a non-negative integer: ");
+    scanf("%d", &num);
+    printf("Factorial of %d: %d\n", num, factorial(num));
+    return 0;
+}
+Program to check whether a number is even or odd using a function:
+c
+Copy code
+#include <stdio.h>
+
+void checkEvenOdd(int n) {
+    if (n % 2 == 0) {
+        printf("%d is even.\n", n);
+    } else {
+        printf("%d is odd.\n", n);
+    }
+}
+
+int main() {
+    int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    checkEvenOdd(num);
+    return 0;
+}
+Program to calculate the sum of natural numbers up to a given number using recursion:
+c
+Copy code
+#include <stdio.h>
+
+int sumOfNaturalNumbers(int n) {
+    if (n == 0) {
+        return 0;
+    } else {
+        return n + sumOfNaturalNumbers(n - 1);
+    }
+}
+
+int main() {
+    int num;
+    printf("Enter a positive integer: ");
+    scanf("%d", &num);
+    printf("Sum of natural numbers up to %d: %d\n", num, sumOfNaturalNumbers(num));
+    return 0;
+}
+Program to swap two numbers using functions:
+c
+Copy code
+#include <stdio.h>
+
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main() {
+    int num1, num2;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+    swap(&num1, &num2);
+    printf("After swapping: \nFirst number: %d\nSecond number: %d\n", num1, num2);
+    return 0;
+}
+Program to find the maximum of three numbers using functions:
+c
+Copy code
+#include <stdio.h>
+
+int maximum(int a, int b, int c) {
+    if (a >= b && a >= c) {
+        return a;
+    } else if (b >= a && b >= c) {
+        return b;
+    } else {
+        return c;
+    }
+}
+
+int main() {
+    int num1, num2, num3;
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+    printf("Maximum number: %d\n", maximum(num1, num2, num3));
+    return 0;
+}
+These programs showcase the usage of functions, including recursive functions, for performing specific tasks and modularizing the code.
+
+
+Chapter 6 topics including pointers:
+
+Program to demonstrate basic pointer declaration and dereferencing:
+c
+Copy code
+#include <stdio.h>
+
+int main() {
+    int num = 10;
+    int *ptr;
+    ptr = &num;
+    printf("Value of num: %d\n", *ptr);
+    return 0;
+}
+Program to swap two numbers using pointers:
+c
+Copy code
+#include <stdio.h>
+
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main() {
+    int num1 = 5, num2 = 10;
+    printf("Before swapping: num1 = %d, num2 = %d\n", num1, num2);
+    swap(&num1, &num2);
+    printf("After swapping: num1 = %d, num2 = %d\n", num1, num2);
+    return 0;
+}
+Program to find the maximum element in an array using pointers:
+c
+Copy code
+#include <stdio.h>
+
+int findMax(int arr[], int size) {
+    int max = *arr;
+    for (int i = 1; i < size; i++) {
+        if (*(arr + i) > max) {
+            max = *(arr + i);
+        }
+    }
+    return max;
+}
+
+int main() {
+    int arr[] = {5, 10, 3, 8, 15};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    printf("Maximum element in the array: %d\n", findMax(arr, size));
+    return 0;
+}
+Program to demonstrate pointer arithmetic:
+c
+Copy code
+#include <stdio.h>
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int *ptr = arr;
+    for (int i = 0; i < 5; i++) {
+        printf("Value at address %p: %d\n", ptr, *ptr);
+        ptr++;
+    }
+    return 0;
+}
+Program to swap two strings using pointers:
+c
+Copy code
+#include <stdio.h>
+
+void swapStrings(char **ptr1, char **ptr2) {
+    char *temp = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = temp;
+}
+
+int main() {
+    char *str1 = "Hello";
+    char *str2 = "World";
+    printf("Before swapping: str1 = %s, str2 = %s\n", str1, str2);
+    swapStrings(&str1, &str2);
+    printf("After swapping: str1 = %s, str2 = %s\n", str1, str2);
+    return 0;
+}
+These programs illustrate the usage of pointers for various tasks such as accessing memory addresses, modifying values indirectly, and performing pointer arithmetic.
+
+User
+Write 5 simple c program on 
+Chapter 7 - Arrays
+ChatGPT
+Certainly! Here are five simple C programs that cover Chapter 7 topics including arrays:
+
+Program to find the sum of elements in an array:
+c
+Copy code
+#include <stdio.h>
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        sum += arr[i];
+    }
+    printf("Sum of elements in the array: %d\n", sum);
+    return 0;
+}
+
+Program to find the largest element in an array:
+c
+Copy code
+#include <stdio.h>
+
+int main() {
+    int arr[] = {10, 25, 8, 14, 30};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int max = arr[0];
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    printf("Largest element in the array: %d\n", max);
+    return 0;
+}
+Program to search for an element in an array:
+c
+Copy code
+#include <stdio.h>
+
+int main() {
+    int arr[] = {3, 6, 9, 12, 15};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int target = 12;
+    int found = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == target) {
+            found = 1;
+            break;
+        }
+    }
+    if (found) {
+        printf("%d found in the array.\n", target);
+    } else {
+        printf("%d not found in the array.\n", target);
+    }
+    return 0;
+}
+Program to find the reverse of an array:
+c
+Copy code
+#include <stdio.h>
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    printf("Original array: ");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\nReverse array: ");
+    for (int i = size - 1; i >= 0; i--) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+    return 0;
+}
+Program to sort an array in ascending order:
+c
+Copy code
+#include <stdio.h>
+
+int main() {
+    int arr[] = {25, 10, 8, 30, 14};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    for (int i = 0; i < size - 1; i++) {
+        for (int j = 0; j < size - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    printf("Sorted array in ascending order: ");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+    return 0;
+}
+These programs demonstrate various operations on arrays, such as finding the sum, searching for an element, reversing the array, and sorting it in ascending order.
+
+User
+Write 5 simple program on
+Chapter 8 - Strings
+ChatGPT
+Certainly! Here are five simple C programs that cover Chapter 8 topics including strings:
+
+Program to find the length of a string:
+c
+Copy code
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[] = "Hello, World!";
+    int length = strlen(str);
+    printf("Length of the string: %d\n", length);
+    return 0;
+}
+Program to concatenate two strings:
+c
+Copy code
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str1[50] = "Hello";
+    char str2[] = "World!";
+    strcat(str1, str2);
+    printf("Concatenated string: %s\n", str1);
+    return 0;
+}
+
+Program to compare two strings:
+c
+Copy code
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str1[] = "hello";
+    char str2[] = "world";
+    int result = strcmp(str1, str2);
+    if (result == 0) {
+        printf("Strings are equal.\n");
+    } else if (result < 0) {
+        printf("%s comes before %s in dictionary order.\n", str1, str2);
+    } else {
+        printf("%s comes after %s in dictionary order.\n", str1, str2);
+    }
+    return 0;
+}
+Program to copy one string to another:
+c
+Copy code
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char source[] = "Hello, World!";
+    char destination[50];
+    strcpy(destination, source);
+    printf("Copied string: %s\n", destination);
+    return 0;
+}
+Program to reverse a string:
+c
+Copy code
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[] = "Hello, World!";
+    int length = strlen(str);
+    for (int i = length - 1; i >= 0; i--) {
+        printf("%c", str[i]);
+    }
+    printf("\n");
+    return 0;
+}
+These programs illustrate various string operations such as finding the length, concatenating, comparing, copying, and reversing strings.
+
+User
+Write 5 simple program on
+Chapter 9 - Structures
+ChatGPT
+Certainly! Here are five simple C programs that cover Chapter 9 topics including structures:
+
+Program to define and access structure members:
+c
+Copy code
+#include <stdio.h>
+
+struct student {
+    int roll_no;
+    char name[50];
+    float marks;
+};
+
+int main() {
+    struct student s1;
+    s1.roll_no = 1;
+    strcpy(s1.name, "John");
+    s1.marks = 95.5;
+    
+    printf("Student Details:\n");
+    printf("Roll Number: %d\n", s1.roll_no);
+    printf("Name: %s\n", s1.name);
+    printf("Marks: %.2f\n", s1.marks);
+    
+    return 0;
+}
+Program to define a structure within another structure:
+c
+Copy code
+#include <stdio.h>
+
+struct date {
+    int day;
+    int month;
+    int year;
+};
+
+struct employee {
+    int emp_id;
+    char name[50];
+    struct date dob;
+};
+
+int main() {
+    struct employee emp1 = {101, "Alice", {10, 4, 1990}};
+    
+    printf("Employee Details:\n");
+    printf("Employee ID: %d\n", emp1.emp_id);
+    printf("Name: %s\n", emp1.name);
+    printf("Date of Birth: %d/%d/%d\n", emp1.dob.day, emp1.dob.month, emp1.dob.year);
+    
+    return 0;
+}
+Program to pass structure to a function:
+c
+Copy code
+#include <stdio.h>
+
+struct point {
+    int x;
+    int y;
+};
+
+void display(struct point p) {
+    printf("Coordinates: (%d, %d)\n", p.x, p.y);
+}
+
+int main() {
+    struct point p1 = {3, 5};
+    display(p1);
+    return 0;
+}
+Program to return a structure from a function:
+c
+Copy code
+#include <stdio.h>
+
+struct point {
+    int x;
+    int y;
+};
+
+struct point createPoint(int x, int y) {
+    struct point p;
+    p.x = x;
+    p.y = y;
+    return p;
+}
+
+int main() {
+    struct point p1 = createPoint(3, 5);
+    printf("Coordinates: (%d, %d)\n", p1.x, p1.y);
+    return 0;
+}
+Program to define an array of structures:
+c
+Copy code
+#include <stdio.h>
+
+struct employee {
+    int emp_id;
+    char name[50];
+};
+
+int main() {
+    struct employee emp_array[3];
+    emp_array[0].emp_id = 101;
+    strcpy(emp_array[0].name, "Alice");
+    emp_array[1].emp_id = 102;
+    strcpy(emp_array[1].name, "Bob");
+    emp_array[2].emp_id = 103;
+    strcpy(emp_array[2].name, "Charlie");
+    
+    printf("Employee Details:\n");
+    for (int i = 0; i < 3; i++) {
+        printf("Employee ID: %d\n", emp_array[i].emp_id);
+        printf("Name: %s\n", emp_array[i].name);
+    }
+    
+    return 0;
+}
+These programs demonstrate various concepts related to structures such as defining structures, accessing structure members, nesting structures, passing structures to functions, returning structures from functions, and defining arrays of structures.
+
+
+
+
+User
+Write 5 simple program on
+Chapter 10 - File I/O
+ChatGPT
+Certainly! Here are five simple C programs that cover Chapter 10 topics including file I/O:
+
+Program to write data to a file:
+c
+Copy code
+#include <stdio.h>
+
+int main() {
+    FILE *file_pointer;
+    file_pointer = fopen("data.txt", "w");
+    if (file_pointer == NULL) {
+        printf("Error opening file!\n");
+        return 1;
+    }
+    fprintf(file_pointer, "Hello, World!\n");
+    fprintf(file_pointer, "This is a file.\n");
+    fclose(file_pointer);
+    printf("Data written to file successfully!\n");
+    return 0;
+}
+Program to read data from a file:
+c
+Copy code
+#include <stdio.h>
+
+int main() {
+    FILE *file_pointer;
+    char line[100];
+    file_pointer = fopen("data.txt", "r");
+    if (file_pointer == NULL) {
+        printf("Error opening file!\n");
+        return 1;
+    }
+    while (fgets(line, sizeof(line), file_pointer)) {
+        printf("%s", line);
+    }
+    fclose(file_pointer);
+    return 0;
+}
+Program to append data to a file:
+c
+Copy code
+#include <stdio.h>
+
+int main() {
+    FILE *file_pointer;
+    file_pointer = fopen("data.txt", "a");
+    if (file_pointer == NULL) {
+        printf("Error opening file!\n");
+        return 1;
+    }
+    fprintf(file_pointer, "This data is appended.\n");
+    fclose(file_pointer);
+    printf("Data appended to file successfully!\n");
+    return 0;
+}
+Program to copy contents of one file to another:
+c
+Copy code
+#include <stdio.h>
+
+int main() {
+    FILE *source_file, *target_file;
+    char ch;
+    source_file = fopen("source.txt", "r");
+    target_file = fopen("target.txt", "w");
+    if (source_file == NULL || target_file == NULL) {
+        printf("Error opening files!\n");
+        return 1;
+    }
+    while ((ch = fgetc(source_file)) != EOF) {
+        fputc(ch, target_file);
+    }
+    printf("File copied successfully!\n");
+    fclose(source_file);
+    fclose(target_file);
+    return 0;
+}
+Program to count number of lines in a file:
+c
+Copy code
+#include <stdio.h>
+
+int main() {
+    FILE *file_pointer;
+    char ch;
+    int lines = 0;
+    file_pointer = fopen("data.txt", "r");
+    if (file_pointer == NULL) {
+        printf("Error opening file!\n");
+        return 1;
+    }
+    while ((ch = fgetc(file_pointer)) != EOF) {
+        if (ch == '\n') {
+            lines++;
+        }
+    }
+    fclose(file_pointer);
+    printf("Number of lines in the file: %d\n", lines);
+    return 0;
+}
+These programs demonstrate basic file I/O operations such as opening, reading, writing, appending, and closing files, as well as performing operations like counting lines and copying contents between files.
+
+
+
+
 
 
