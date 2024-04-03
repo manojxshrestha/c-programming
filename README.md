@@ -26,9 +26,9 @@ Materials:
 
 1. Computer with a C compiler installed (e.g., GCC, Clang)
 2. Text editor or integrated development environment (IDE) for writing and editing C code
-<hr>
+
 Methods:
-<hr>
+
 1.Write each program in a text editor or IDE.
 2.Save the program with a .c extension (e.g., program1.c).
 3.Compile each program using the C compiler installed on your computer.
