@@ -1,4 +1,8 @@
- 50 Practical Programs"
+ <center>
+
+# C Programming Essentials in 50 Programs
+
+</center>
 
 ```
 Presented by: Manoj Shrestha
