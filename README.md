@@ -1,12 +1,12 @@
 # Title: Comprehensive Guide to C Programming: 50 Programs
 
-**
+<hr>
 Presented by: Manoj Shrestha 
 
 Class: 12
 Email: manojxshrestha@gmail.com
 College: PNHSS
-**
+<hr>
 
 Introduction:
 
