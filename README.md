@@ -37,3 +37,19 @@ Methods:
 <hr>
 
 Programs:
+
+
+
+# 1. First Program
+```
+#include<stdio.h>
+
+int main() {
+
+printf("Hello World");
+
+return 0;
+
+}
+```
+ 
