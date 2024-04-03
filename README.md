@@ -40,9 +40,8 @@ Methods:
 Programs:
 <hr>
 
-<h2>
+
 1. First Program
-<h2>
  ```
 #include<stdio.h>
 
@@ -54,4 +53,19 @@ return 0;
 
 }
 ```
- 
+
+2. Input (Sum of 2 numbers)
+```
+#include<stdio.h>
+int main() {
+int a, b;
+printf("enter a \n");
+scanf("%d", &a);
+printf("enter b \n");
+scanf("%d", &b);
+printf("sum of a & b is : %d \n", a+b);
+return 0;
+}
+```
+
+6. Practice Qs 1 (Area of Square)
