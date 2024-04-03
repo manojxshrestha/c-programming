@@ -35,8 +35,9 @@ Methods:
 4. Run the compiled program to observe its output.
 5. Debug any errors encountered during compilation or execution.
 
+
+**Topics to be covered :**
 <hr>
-Topics to be covered :
 
 Installation + Setup
 
@@ -63,9 +64,9 @@ Chapter 10 - File I/O
 
 
 # Chapter 1:  Topics including variables, data types, and input/output:
-<hr>
-1. Program to display "Hello, World!" on the screen:
-<hr>
+
+**1. Program to display "Hello, World!" on the screen:**
+
 
 ```
 #include <stdio.h>
@@ -74,7 +75,7 @@ int main() {
     return 0;
 }
 ```
-2. Program to read an integer from the user and display it back:
+**2. Program to read an integer from the user and display it back:**
 
 ```
 #include <stdio.h>
@@ -87,7 +88,7 @@ int main() {
 }
 ```
 
-3. Program to calculate the area of a rectangle using user input:
+**3. Program to calculate the area of a rectangle using user input:**
 
 ```
 #include <stdio.h>
@@ -103,7 +104,7 @@ int main() {
 }
 ```
 
-4. Program to convert temperature from Celsius to Fahrenheit:
+**4. Program to convert temperature from Celsius to Fahrenheit:**
 ```
 #include <stdio.h>
 int main() {
@@ -116,7 +117,7 @@ int main() {
 }
 ```
 
-5. Program to calculate the sum of two numbers entered by the user:
+**5. Program to calculate the sum of two numbers entered by the user:**
 
 ```
 #include <stdio.h>
@@ -132,5 +133,5 @@ int main() {
 }
 ```
 
-## These programs cover basic concepts like declaring variables, using different data types, taking input from the user, and displaying output.
+**These programs cover basic concepts like declaring variables, using different data types, taking input from the user, and displaying output.**
 
