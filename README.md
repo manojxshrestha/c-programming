@@ -131,7 +131,6 @@ int main() {
     return 0;
 }
 ```
-<hr>
-These programs cover basic concepts like declaring variables, using different data types, taking input from the user, and displaying output.
-<hr>
+
+## These programs cover basic concepts like declaring variables, using different data types, taking input from the user, and displaying output.
 
