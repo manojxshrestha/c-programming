@@ -15,7 +15,7 @@ Computer Science: Project Work
 
 # Introduction:
 <hr>
-Welcome to the world of C programming, where endless possibilities await you! Throughout this guide, we’ll explore 50 fundamental programs that will help you become more skilled and knowledgeable in the C programming language.
+Welcome to the world of C programming, where endless possibilities await you! Throughout this project, we’ll explore 50 fundamental programs that will help you become more skilled and knowledgeable in the C programming language.
 
 So, let’s dive in and start exploring the world of C programming together!
 <hr>
@@ -1027,3 +1027,8 @@ int main() {
 ```
 
 **These programs demonstrate basic file I/O operations such as opening, reading, writing, appending, and closing files, as well as performing operations like counting lines and copying contents between files.**
+
+
+# In conclusion
+
+**This project has covered 50 essential C programming exercises, starting from basic concepts and progressing to more advanced topics. Keep coding and exploring!!**
