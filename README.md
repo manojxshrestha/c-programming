@@ -806,18 +806,15 @@ struct student {
     char name[50];
     float marks;
 };
-
 int main() {
     struct student s1;
     s1.roll_no = 1;
     strcpy(s1.name, "John");
     s1.marks = 95.5;
-    
     printf("Student Details:\n");
     printf("Roll Number: %d\n", s1.roll_no);
     printf("Name: %s\n", s1.name);
     printf("Marks: %.2f\n", s1.marks);
-    
     return 0;
 }
 ```
@@ -826,44 +823,37 @@ int main() {
 
 ```
 #include <stdio.h>
-
 struct date {
     int day;
     int month;
     int year;
 };
-
 struct employee {
     int emp_id;
     char name[50];
     struct date dob;
 };
-
 int main() {
     struct employee emp1 = {101, "Alice", {10, 4, 1990}};
-    
     printf("Employee Details:\n");
     printf("Employee ID: %d\n", emp1.emp_id);
     printf("Name: %s\n", emp1.name);
     printf("Date of Birth: %d/%d/%d\n", emp1.dob.day, emp1.dob.month, emp1.dob.year);
-    
     return 0;
 }
+```
 
-43. Program to pass structure to a function:
+**43. Program to pass structure to a function:**
 
 ```
 #include <stdio.h>
-
 struct point {
     int x;
     int y;
 };
-
 void display(struct point p) {
     printf("Coordinates: (%d, %d)\n", p.x, p.y);
 }
-
 int main() {
     struct point p1 = {3, 5};
     display(p1);
@@ -871,38 +861,35 @@ int main() {
 }
 ```
 
-Program to return a structure from a function:
-c
-Copy code
-#include <stdio.h>
+**44. Program to return a structure from a function:**
 
+```
+#include <stdio.h>
 struct point {
     int x;
     int y;
 };
-
 struct point createPoint(int x, int y) {
     struct point p;
     p.x = x;
     p.y = y;
     return p;
 }
-
 int main() {
     struct point p1 = createPoint(3, 5);
     printf("Coordinates: (%d, %d)\n", p1.x, p1.y);
     return 0;
 }
-Program to define an array of structures:
-c
-Copy code
-#include <stdio.h>
+```
 
+**45. Program to define an array of structures:**
+
+```
+#include <stdio.h>
 struct employee {
     int emp_id;
     char name[50];
 };
-
 int main() {
     struct employee emp_array[3];
     emp_array[0].emp_id = 101;
@@ -911,31 +898,26 @@ int main() {
     strcpy(emp_array[1].name, "Bob");
     emp_array[2].emp_id = 103;
     strcpy(emp_array[2].name, "Charlie");
-    
     printf("Employee Details:\n");
     for (int i = 0; i < 3; i++) {
         printf("Employee ID: %d\n", emp_array[i].emp_id);
         printf("Name: %s\n", emp_array[i].name);
     }
-    
     return 0;
 }
-These programs demonstrate various concepts related to structures such as defining structures, accessing structure members, nesting structures, passing structures to functions, returning structures from functions, and defining arrays of structures.
+```
+
+**These programs demonstrate various concepts related to structures such as defining structures, accessing structure members, nesting structures, passing structures to functions, returning structures from functions, and defining arrays of structures.**
 
 
 
 
-User
-Write 5 simple program on
-Chapter 10 - File I/O
-ChatGPT
-Certainly! Here are five simple C programs that cover Chapter 10 topics including file I/O:
+# Chapter 10: Topics including file I/O:
 
-Program to write data to a file:
-c
-Copy code
+**46. Program to write data to a file:**
+
+```
 #include <stdio.h>
-
 int main() {
     FILE *file_pointer;
     file_pointer = fopen("data.txt", "w");
@@ -949,11 +931,12 @@ int main() {
     printf("Data written to file successfully!\n");
     return 0;
 }
-Program to read data from a file:
-c
-Copy code
-#include <stdio.h>
+```
 
+**47. Program to read data from a file:**
+
+```
+#include <stdio.h>
 int main() {
     FILE *file_pointer;
     char line[100];
@@ -968,11 +951,12 @@ int main() {
     fclose(file_pointer);
     return 0;
 }
-Program to append data to a file:
-c
-Copy code
-#include <stdio.h>
+```
 
+**48. Program to append data to a file:**
+
+```
+#include <stdio.h>
 int main() {
     FILE *file_pointer;
     file_pointer = fopen("data.txt", "a");
@@ -985,11 +969,12 @@ int main() {
     printf("Data appended to file successfully!\n");
     return 0;
 }
-Program to copy contents of one file to another:
-c
-Copy code
-#include <stdio.h>
+```
 
+**49. Program to copy contents of one file to another:**
+
+```
+#include <stdio.h>
 int main() {
     FILE *source_file, *target_file;
     char ch;
@@ -1007,11 +992,12 @@ int main() {
     fclose(target_file);
     return 0;
 }
-Program to count number of lines in a file:
-c
-Copy code
-#include <stdio.h>
+```
 
+**50. Program to count number of lines in a file:**
+
+```
+#include <stdio.h>
 int main() {
     FILE *file_pointer;
     char ch;
@@ -1030,11 +1016,6 @@ int main() {
     printf("Number of lines in the file: %d\n", lines);
     return 0;
 }
+```
 
 **These programs demonstrate basic file I/O operations such as opening, reading, writing, appending, and closing files, as well as performing operations like counting lines and copying contents between files.**
-
-
-
-
-
-
