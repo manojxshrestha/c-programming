@@ -1030,7 +1030,8 @@ int main() {
     printf("Number of lines in the file: %d\n", lines);
     return 0;
 }
-These programs demonstrate basic file I/O operations such as opening, reading, writing, appending, and closing files, as well as performing operations like counting lines and copying contents between files.
+
+**These programs demonstrate basic file I/O operations such as opening, reading, writing, appending, and closing files, as well as performing operations like counting lines and copying contents between files.**
 
 
 
