@@ -612,7 +612,7 @@ int main() {
 
 **These programs illustrate the usage of pointers for various tasks such as accessing memory addresses, modifying values indirectly, and performing pointer arithmetic.**
 
-# Chapter 7 topics including arrays:
+# Chapter 7: Topics including arrays:
 
 **31. Program to find the sum of elements in an array:**
 
