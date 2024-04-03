@@ -36,12 +36,14 @@ Methods:
 5. Debug any errors encountered during compilation or execution.
 <hr>
 
+<hr>
 Programs:
+<hr>
 
-
-
-# 1. First Program
-```
+<h2>
+1. First Program
+<h2>
+ ```
 #include<stdio.h>
 
 int main() {
