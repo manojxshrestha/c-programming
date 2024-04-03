@@ -19,7 +19,7 @@ So, let’s dive in and start exploring the world of C programming together!
 <hr>
 
 # Materials & Methods:
-<hr>
+
 To execute the programs outlined in this guide, the following materials and methods are recommended:
 
 Materials:
@@ -36,9 +36,7 @@ Methods:
 5. Debug any errors encountered during compilation or execution.
 <hr>
 
-<hr>
-Programs:
-<hr>
+# 50 Programs:
 
 
 1. First Program
