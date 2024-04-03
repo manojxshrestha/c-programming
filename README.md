@@ -37,7 +37,6 @@ Methods:
 
 
 **Topics to be covered :**
-<hr>
 
 Installation + Setup
 
