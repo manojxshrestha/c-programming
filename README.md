@@ -408,13 +408,12 @@ int main() {
 
 
 
-Chapter 5 topics including functions and recursion:
+# Chapter 5: Topics including functions and recursion:
 
-Program to find the factorial of a number using a function:
-c
-Copy code
+**21. Program to find the factorial of a number using a function:**
+
+```
 #include <stdio.h>
-
 int factorial(int n) {
     if (n == 0 || n == 1) {
         return 1;
@@ -422,7 +421,6 @@ int factorial(int n) {
         return n * factorial(n - 1);
     }
 }
-
 int main() {
     int num;
     printf("Enter a non-negative integer: ");
@@ -430,11 +428,12 @@ int main() {
     printf("Factorial of %d: %d\n", num, factorial(num));
     return 0;
 }
-Program to check whether a number is even or odd using a function:
-c
-Copy code
-#include <stdio.h>
+```
 
+**22. Program to check whether a number is even or odd using a function:**
+
+```
+#include <stdio.h>
 void checkEvenOdd(int n) {
     if (n % 2 == 0) {
         printf("%d is even.\n", n);
@@ -442,7 +441,6 @@ void checkEvenOdd(int n) {
         printf("%d is odd.\n", n);
     }
 }
-
 int main() {
     int num;
     printf("Enter an integer: ");
@@ -450,11 +448,13 @@ int main() {
     checkEvenOdd(num);
     return 0;
 }
-Program to calculate the sum of natural numbers up to a given number using recursion:
-c
-Copy code
-#include <stdio.h>
+```
 
+
+**23. Program to calculate the sum of natural numbers up to a given number using recursion:**
+
+```
+#include <stdio.h>
 int sumOfNaturalNumbers(int n) {
     if (n == 0) {
         return 0;
@@ -462,7 +462,6 @@ int sumOfNaturalNumbers(int n) {
         return n + sumOfNaturalNumbers(n - 1);
     }
 }
-
 int main() {
     int num;
     printf("Enter a positive integer: ");
@@ -470,17 +469,17 @@ int main() {
     printf("Sum of natural numbers up to %d: %d\n", num, sumOfNaturalNumbers(num));
     return 0;
 }
-Program to swap two numbers using functions:
-c
-Copy code
-#include <stdio.h>
+```
 
+**24. Program to swap two numbers using functions:**
+
+```
+#include <stdio.h>
 void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
-
 int main() {
     int num1, num2;
     printf("Enter two numbers: ");
@@ -489,11 +488,11 @@ int main() {
     printf("After swapping: \nFirst number: %d\nSecond number: %d\n", num1, num2);
     return 0;
 }
-Program to find the maximum of three numbers using functions:
-c
-Copy code
-#include <stdio.h>
+```
+**25. Program to find the maximum of three numbers using functions:**
 
+```
+#include <stdio.h>
 int maximum(int a, int b, int c) {
     if (a >= b && a >= c) {
         return a;
@@ -503,7 +502,6 @@ int maximum(int a, int b, int c) {
         return c;
     }
 }
-
 int main() {
     int num1, num2, num3;
     printf("Enter three numbers: ");
@@ -511,16 +509,17 @@ int main() {
     printf("Maximum number: %d\n", maximum(num1, num2, num3));
     return 0;
 }
-These programs showcase the usage of functions, including recursive functions, for performing specific tasks and modularizing the code.
+```
+
+**These programs showcase the usage of functions, including recursive functions, for performing specific tasks and modularizing the code.**
 
 
-Chapter 6 topics including pointers:
+# Chapter 6: Topics including pointers:
 
-Program to demonstrate basic pointer declaration and dereferencing:
-c
-Copy code
+**26. Program to demonstrate basic pointer declaration and dereferencing:**
+
+```
 #include <stdio.h>
-
 int main() {
     int num = 10;
     int *ptr;
@@ -528,17 +527,17 @@ int main() {
     printf("Value of num: %d\n", *ptr);
     return 0;
 }
-Program to swap two numbers using pointers:
-c
-Copy code
-#include <stdio.h>
+```
 
+**27. Program to swap two numbers using pointers:**
+
+```
+#include <stdio.h>
 void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
-
 int main() {
     int num1 = 5, num2 = 10;
     printf("Before swapping: num1 = %d, num2 = %d\n", num1, num2);
@@ -546,11 +545,12 @@ int main() {
     printf("After swapping: num1 = %d, num2 = %d\n", num1, num2);
     return 0;
 }
-Program to find the maximum element in an array using pointers:
-c
-Copy code
-#include <stdio.h>
+```
 
+**28. Program to find the maximum element in an array using pointers:**
+
+```
+#include <stdio.h>
 int findMax(int arr[], int size) {
     int max = *arr;
     for (int i = 1; i < size; i++) {
@@ -560,18 +560,18 @@ int findMax(int arr[], int size) {
     }
     return max;
 }
-
 int main() {
     int arr[] = {5, 10, 3, 8, 15};
     int size = sizeof(arr) / sizeof(arr[0]);
     printf("Maximum element in the array: %d\n", findMax(arr, size));
     return 0;
 }
-Program to demonstrate pointer arithmetic:
-c
-Copy code
-#include <stdio.h>
+```
 
+**29. Program to demonstrate pointer arithmetic:**
+
+```
+#include <stdio.h>
 int main() {
     int arr[] = {1, 2, 3, 4, 5};
     int *ptr = arr;
@@ -581,17 +581,17 @@ int main() {
     }
     return 0;
 }
-Program to swap two strings using pointers:
-c
-Copy code
-#include <stdio.h>
+```
 
+**30. Program to swap two strings using pointers:**
+
+```
+#include <stdio.h>
 void swapStrings(char **ptr1, char **ptr2) {
     char *temp = *ptr1;
     *ptr1 = *ptr2;
     *ptr2 = temp;
 }
-
 int main() {
     char *str1 = "Hello";
     char *str2 = "World";
@@ -600,19 +600,16 @@ int main() {
     printf("After swapping: str1 = %s, str2 = %s\n", str1, str2);
     return 0;
 }
-These programs illustrate the usage of pointers for various tasks such as accessing memory addresses, modifying values indirectly, and performing pointer arithmetic.
+```
 
-User
-Write 5 simple c program on 
-Chapter 7 - Arrays
-ChatGPT
-Certainly! Here are five simple C programs that cover Chapter 7 topics including arrays:
+**These programs illustrate the usage of pointers for various tasks such as accessing memory addresses, modifying values indirectly, and performing pointer arithmetic.**
 
-Program to find the sum of elements in an array:
-c
-Copy code
+# Chapter 7 topics including arrays:
+
+**31. Program to find the sum of elements in an array:**
+
+```
 #include <stdio.h>
-
 int main() {
     int arr[] = {1, 2, 3, 4, 5};
     int size = sizeof(arr) / sizeof(arr[0]);
@@ -623,12 +620,12 @@ int main() {
     printf("Sum of elements in the array: %d\n", sum);
     return 0;
 }
+```
 
-Program to find the largest element in an array:
-c
-Copy code
+**32. Program to find the largest element in an array:**
+
+```
 #include <stdio.h>
-
 int main() {
     int arr[] = {10, 25, 8, 14, 30};
     int size = sizeof(arr) / sizeof(arr[0]);
@@ -641,11 +638,12 @@ int main() {
     printf("Largest element in the array: %d\n", max);
     return 0;
 }
-Program to search for an element in an array:
-c
-Copy code
-#include <stdio.h>
+```
 
+**33. Program to search for an element in an array:**
+
+```
+#include <stdio.h>
 int main() {
     int arr[] = {3, 6, 9, 12, 15};
     int size = sizeof(arr) / sizeof(arr[0]);
@@ -664,11 +662,12 @@ int main() {
     }
     return 0;
 }
-Program to find the reverse of an array:
-c
-Copy code
-#include <stdio.h>
+```
 
+**34. Program to find the reverse of an array:**
+
+```
+#include <stdio.h>
 int main() {
     int arr[] = {1, 2, 3, 4, 5};
     int size = sizeof(arr) / sizeof(arr[0]);
@@ -683,11 +682,12 @@ int main() {
     printf("\n");
     return 0;
 }
-Program to sort an array in ascending order:
-c
-Copy code
-#include <stdio.h>
+```
 
+**35. Program to sort an array in ascending order:****
+
+```
+#include <stdio.h>
 int main() {
     int arr[] = {25, 10, 8, 30, 14};
     int size = sizeof(arr) / sizeof(arr[0]);
@@ -707,32 +707,31 @@ int main() {
     printf("\n");
     return 0;
 }
-These programs demonstrate various operations on arrays, such as finding the sum, searching for an element, reversing the array, and sorting it in ascending order.
+```
 
-User
-Write 5 simple program on
-Chapter 8 - Strings
-ChatGPT
-Certainly! Here are five simple C programs that cover Chapter 8 topics including strings:
+**These programs demonstrate various operations on arrays, such as finding the sum, searching for an element, reversing the array, and sorting it in ascending order.**
 
-Program to find the length of a string:
-c
-Copy code
+
+# Chapter 8 topics including strings:
+
+**36. Program to find the length of a string:**
+
+```
 #include <stdio.h>
 #include <string.h>
-
 int main() {
     char str[] = "Hello, World!";
     int length = strlen(str);
     printf("Length of the string: %d\n", length);
     return 0;
 }
-Program to concatenate two strings:
-c
-Copy code
+```
+
+**37. Program to concatenate two strings:**
+
+```
 #include <stdio.h>
 #include <string.h>
-
 int main() {
     char str1[50] = "Hello";
     char str2[] = "World!";
@@ -740,13 +739,13 @@ int main() {
     printf("Concatenated string: %s\n", str1);
     return 0;
 }
+```
 
-Program to compare two strings:
-c
-Copy code
+**38. Program to compare two strings:**
+
+```
 #include <stdio.h>
 #include <string.h>
-
 int main() {
     char str1[] = "hello";
     char str2[] = "world";
@@ -760,9 +759,11 @@ int main() {
     }
     return 0;
 }
-Program to copy one string to another:
-c
-Copy code
+```
+
+**39. Program to copy one string to another:**
+
+```
 #include <stdio.h>
 #include <string.h>
 
@@ -773,12 +774,13 @@ int main() {
     printf("Copied string: %s\n", destination);
     return 0;
 }
-Program to reverse a string:
-c
-Copy code
+```
+
+**40. Program to reverse a string:**
+
+```
 #include <stdio.h>
 #include <string.h>
-
 int main() {
     char str[] = "Hello, World!";
     int length = strlen(str);
@@ -788,19 +790,17 @@ int main() {
     printf("\n");
     return 0;
 }
-These programs illustrate various string operations such as finding the length, concatenating, comparing, copying, and reversing strings.
+```
 
-User
-Write 5 simple program on
-Chapter 9 - Structures
-ChatGPT
-Certainly! Here are five simple C programs that cover Chapter 9 topics including structures:
+**These programs illustrate various string operations such as finding the length, concatenating, comparing, copying, and reversing strings.**
 
-Program to define and access structure members:
-c
-Copy code
+
+# Chapter 9: Topics including structures:
+
+**41. Program to define and access structure members:**
+
+```
 #include <stdio.h>
-
 struct student {
     int roll_no;
     char name[50];
@@ -820,9 +820,11 @@ int main() {
     
     return 0;
 }
-Program to define a structure within another structure:
-c
-Copy code
+```
+
+**42. Program to define a structure within another structure:**
+
+```
 #include <stdio.h>
 
 struct date {
@@ -847,9 +849,10 @@ int main() {
     
     return 0;
 }
-Program to pass structure to a function:
-c
-Copy code
+
+43. Program to pass structure to a function:
+
+```
 #include <stdio.h>
 
 struct point {
@@ -866,6 +869,8 @@ int main() {
     display(p1);
     return 0;
 }
+```
+
 Program to return a structure from a function:
 c
 Copy code
