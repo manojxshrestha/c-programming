@@ -220,5 +220,92 @@ int main() {
 **These programs demonstrate basic control structures like if-else statements and the use of arithmetic and comparison operators**
 
 
+# Chapter 3: Topics including conditional statements:
 
+**11. Program to find the largest among three numbers**
+
+```
+#include <stdio.h>
+int main() {
+    int num1, num2, num3;
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+    
+    if (num1 >= num2 && num1 >= num3) {
+        printf("%d is the largest.\n", num1);
+    } else if (num2 >= num1 && num2 >= num3) {
+        printf("%d is the largest.\n", num2);
+    } else {
+        printf("%d is the largest.\n", num3);
+    }
+    return 0;
+}
+```
+
+
+**12. Program to check whether a number is positive, negative, or zero:**
+
+```
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    if (num > 0) {
+        printf("%d is positive.\n", num);
+    } else if (num < 0) {
+        printf("%d is negative.\n", num);
+    } else {
+        printf("The number is zero.\n");
+    }
+    return 0;
+}
+```
+
+**13. Program to check whether a character is a vowel or consonant:**
+
+```
+#include <stdio.h>
+
+int main() {
+    char ch;
+    printf("Enter a character: ");
+    scanf(" %c", &ch);
+    
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+        ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+        printf("%c is a vowel.\n", ch);
+    } else {
+        printf("%c is a consonant.\n", ch);
+    }
+    return 0;
+}
+```
+
+**14.Program to check whether a year is a leap year or not using conditional operator:**
+
+```
+#include <stdio.h>
+int main() {
+    int year;
+    printf("Enter a year: ");
+    scanf("%d", &year);
+    (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) ? printf("%d is a leap year.\n", year) : printf("%d is not a leap year.\n", year);
+    return 0;
+}
+```
+
+**15.Program to find the maximum of two numbers using conditional operator:**
+```
+#include <stdio.h>
+int main() {
+    int num1, num2, max;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+    max = (num1 > num2) ? num1 : num2;
+    printf("Maximum number is: %d\n", max);
+    return 0;
+}
+```
+**These programs illustrate the use of if-else statements and conditional operators for decision-making in C programming.**
 
