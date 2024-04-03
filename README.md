@@ -309,3 +309,104 @@ int main() {
 ```
 **These programs illustrate the use of if-else statements and conditional operators for decision-making in C programming.**
 
+
+# Chapter 4: Topics including loop control statements:
+
+**16. Program to print numbers from 1 to 10 using a while loop:**
+
+```
+#include <stdio.h>
+int main() {
+    int i = 1;
+    printf("Numbers from 1 to 10: ");
+    while (i <= 10) {
+        printf("%d ", i);
+        i++;
+    }
+    printf("\n");
+    return 0;
+}
+```
+
+**17. Program to calculate the factorial of a number using a for loop:**
+
+```
+#include <stdio.h>
+int main() {
+    int num, factorial = 1;
+    printf("Enter a positive integer: ");
+    scanf("%d", &num);
+    for (int i = 1; i <= num; i++) {
+        factorial *= i;
+    }
+    printf("Factorial of %d: %d\n", num, factorial);
+    return 0;
+}
+```
+
+**18. Program to print Fibonacci series up to a given number using a while loop:**
+
+```
+#include <stdio.h>
+int main() {
+    int limit, num1 = 0, num2 = 1, nextTerm;
+    printf("Enter the limit of Fibonacci series: ");
+    scanf("%d", &limit);    
+    printf("Fibonacci series up to %d: ", limit);
+    while (num1 <= limit) {
+        printf("%d, ", num1);
+        nextTerm = num1 + num2;
+        num1 = num2;
+        num2 = nextTerm;
+    }
+    printf("\n");
+    return 0;
+}
+```
+
+**19. Program to find the sum of natural numbers from 1 to n using a for loop:**
+
+```
+#include <stdio.h>
+int main() {
+    int n, sum = 0;
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);    
+    for (int i = 1; i <= n; i++) {
+        sum += i;
+    }
+    printf("Sum of natural numbers from 1 to %d: %d\n", n, sum);
+    return 0;
+}
+```
+
+**20. Program to check whether a number is prime or not using a for loop:**
+
+```
+#include <stdio.h>
+int main() {
+    int num, isPrime = 1;
+    printf("Enter a positive integer: ");
+    scanf("%d", &num);
+    for (int i = 2; i <= num / 2; i++) {
+        if (num % i == 0) {
+            isPrime = 0;
+            break;
+        }
+    }
+    if (num <= 1 || !isPrime) {
+        printf("%d is not a prime number.\n", num);
+    } else {
+        printf("%d is a prime number.\n", num);
+    }
+    return 0;
+}
+```
+
+**These programs demonstrate the usage of different loop control statements such as while loop and for loop for iterating over a range of values, performing calculations, and checking conditions repeatedly.**
+
+
+
+
+
+
