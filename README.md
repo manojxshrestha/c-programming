@@ -40,7 +40,6 @@ Methods:
 <hr>
 Chapter 1 - Variables, Data types + Input/Output
 
-
 Chapter 2 - Instructions & Operators
 
 Chapter 3 - Conditional Statements
@@ -132,4 +131,94 @@ int main() {
 ```
 
 **These programs cover basic concepts like declaring variables, using different data types, taking input from the user, and displaying output.**
+
+# Chapter 2: Topics including instructions and operators:
+
+**6. Program to calculate the area of a circle using radius:**
+
+```
+#include <stdio.h>
+
+int main() {
+    float radius, area;
+    printf("Enter radius of the circle: ");
+    scanf("%f", &radius);
+    area = 3.14 * radius * radius;
+    printf("Area of the circle: %.2f\n", area);
+    return 0;
+}
+```
+
+**7. Program to check whether a number is even or odd:**
+
+```
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    if (num % 2 == 0) {
+        printf("%d is even.\n", num);
+    } else {
+        printf("%d is odd.\n", num);
+    }
+    return 0;
+}
+```
+
+**8. Program to find the maximum of two numbers:**
+
+```
+#include <stdio.h>
+int main() {
+    int num1, num2, max;
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+    max = (num1 > num2) ? num1 : num2;
+    printf("Maximum number: %d\n", max);
+    return 0;
+}
+```
+
+**9. Program to swap two numbers using a temporary variable:**
+
+```
+#include <stdio.h>
+
+int main() {
+    int num1, num2, temp;
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+    temp = num1;
+    num1 = num2;
+    num2 = temp;
+    printf("After swapping: \nFirst number: %d\nSecond number: %d\n", num1, num2);
+    return 0;
+}
+```
+
+**10. Program to check whether a year is a leap year or not:**
+
+```
+#include <stdio.h>
+int main() {
+    int year;
+    printf("Enter a year: ");
+    scanf("%d", &year);
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+        printf("%d is a leap year.\n", year);
+    } else {
+        printf("%d is not a leap year.\n", year);
+    }
+    return 0;
+}
+```
+**These programs demonstrate basic control structures like if-else statements and the use of arithmetic and comparison operators**
+
+
+
 
