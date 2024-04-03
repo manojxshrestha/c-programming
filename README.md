@@ -36,56 +36,29 @@ Methods:
 5. Debug any errors encountered during compilation or execution.
 <hr>
 
-# 50 Programs:
+<hr>
+Topics to be covered :
 
+Installation + Setup
 
-1. First Program
- ```
-#include<stdio.h>
+Chapter 1 - Variables, Data types + Input/Output
 
-int main() {
+Chapter 2 - Instructions & Operators
 
-printf("Hello World");
+Chapter 3 - Conditional Statements
 
-return 0;
+Chapter 4 - Loop Control Statements
 
-}
-```
+Chapter 5 - Functions & Recursion
 
-2. Input (Sum of 2 numbers)
-```
-#include<stdio.h>
-int main() {
-int a, b;
-printf("enter a \n");
-scanf("%d", &a);
-printf("enter b \n");
-scanf("%d", &b);
-printf("sum of a & b is : %d \n", a+b);
-return 0;
-}
-```
+Chapter 6 - Pointers
 
- 3. (Area of Square)
-```
-#include<stdio.h>
-//area of square
-int main() {
-int side;
-scanf("%d", &side);
-printf("%d", side * side);
-return 0;
-}
-```
+Chapter 7 - Arrays
 
-4. (Area of Circle)
-```
-#include<stdio.h>
-//area of square
-int main() {
-float radius;
-scanf("%f", &radius);
-printf("%f", 3.14 * radius * radius);
-return 0;
-}
-```
+Chapter 8 - Strings
+
+Chapter 9 - Structures
+
+Chapter 10 - File I/O
+<hr>
+
