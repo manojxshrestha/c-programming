@@ -7,14 +7,12 @@
 ```
 Presented by: Manoj Shrestha
 Class: 12
-Email: manojxshrestha@gmail.com
 College: PNHSS
+Computer Science: Project Work
 ```
 
 # Introduction:
 <hr>
-Sure, here's the revised line:
-
 Welcome to the world of C programming, where endless possibilities await you! Throughout this guide, we’ll explore 50 fundamental programs that will help you become more skilled and knowledgeable in the C programming language.
 
 In this introduction, we’ll give you some background information on why learning C programming is important. We’ll also briefly review some key resources that can help you along the way.
