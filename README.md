@@ -720,7 +720,7 @@ int main() {
 **These programs demonstrate various operations on arrays, such as finding the sum, searching for an element, reversing the array, and sorting it in ascending order.**
 
 
-# Chapter 8 topics including strings:
+# Chapter 8: Topics including strings:
 
 **36. Program to find the length of a string:**
 
