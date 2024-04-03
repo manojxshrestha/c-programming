@@ -32,11 +32,11 @@ Materials:
 
 Methods:
 
-1.Write each program in a text editor or IDE.
+1. Write each program in a text editor or IDE.
 
-2.Save the program with a .c extension (e.g., program1.c).
+2. Save the program with a .c extension (e.g., program1.c).
 
-3.Compile each program using the C compiler installed on your computer.
+3. Compile each program using the C compiler installed on your computer.
 
 4. Run the compiled program to observe its output.
 
@@ -290,7 +290,7 @@ int main() {
 }
 ```
 
-**14.Program to check whether a year is a leap year or not using conditional operator:**
+**14. Program to check whether a year is a leap year or not using conditional operator:**
 
 ```
 #include <stdio.h>
@@ -303,7 +303,7 @@ int main() {
 }
 ```
 
-**15.Program to find the maximum of two numbers using conditional operator:**
+**15. Program to find the maximum of two numbers using conditional operator:**
 ```
 #include <stdio.h>
 int main() {
