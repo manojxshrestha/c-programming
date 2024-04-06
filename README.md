@@ -10,7 +10,7 @@
 # Project Work
 
 ```
-Presented by: Pradip Tamang
+Presented by: Sarmila Tamang
 Class: 12
 College: PNHSS
 Subject: Computer Science
