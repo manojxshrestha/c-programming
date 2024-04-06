@@ -10,7 +10,7 @@
 # Project Work
 
 ```
-Presented by: Manoj Shrestha
+Presented by: Pradip Tamang
 Class: 12
 College: PNHSS
 Subject: Computer Science
@@ -1035,3 +1035,6 @@ int main() {
 # In conclusion
 
 **This project has covered 50 essential C programming exercises, starting from basic concepts and progressing to more advanced topics. Keep coding and exploring!!**
+
+
+Credit goes to: https://github.com/manojxshrestha
