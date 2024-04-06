@@ -6,8 +6,11 @@
 
 ![IMG_20240403_181549](https://github.com/manojxshrestha/cs-project/assets/106522935/7314b761-fd59-4aa7-bdd7-dc4446ce18c8)
 
+
+
+
 ```
-Presented by: Mandira Rimal
+Presented by: Manoj Shrestha
 Class: 12
 College: PNHSS
 Computer Science: Project Work
