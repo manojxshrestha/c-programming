@@ -10,7 +10,7 @@
 # Project Work
 
 ```
-Presented by: Sachina Giri
+Presented by: Manoj Shrestha
 Class: 12
 College: PNHSS
 Subject: Computer Science
